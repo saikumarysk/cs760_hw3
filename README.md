@@ -1,1 +1,3 @@
-# cs760_hw3
+# COMP SCI 760 - Machine Learning
+
+These are solutions for homework assignment 3 in the course "COMP SCI 760 - Machine Learning" taught by Prof. Josiah Hanna in the Fall 2023 semester at the University of Wisconsin-Madison.
