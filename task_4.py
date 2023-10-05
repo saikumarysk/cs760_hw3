@@ -1,7 +1,7 @@
 import data_import
 import kNN
 
-# This also takes roughly 45 mins to complete.
+# This also takes roughly 20 mins to complete.
 
 # Results
 # k = 1 : 0.825, 0.853, 0.862, 0.851, 0.775 - 0.8332
@@ -9,6 +9,13 @@ import kNN
 # k = 5 : 0.838, 0.85, 0.873, 0.869, 0.779 - 0.8418
 # k = 7 : 0.838, 0.862, 0.875, 0.874, 0.778 - 0.8454
 # k = 10 : 0.862, 0.87, 0.876, 0.887, 0.781 - 0.8552
+
+# Results after normalization - We might be skewing data and changing distances. This is wrong
+# k = 1 : 0.832, 0.878, 0.883, 0.87, 0.821 - 0.8568
+# k = 3 : 0.805, 0.845, 0.869, 0.836, 0.814 - 0.8338
+# k = 5 : 0.766, 0.84, 0.846, 0.818, 0.799 - 0.8138
+# k = 7 : 0.748, 0.801, 0.822, 0.812, 0.772 - 0.791
+# k = 10 : 0.733, 0.777, 0.798, 0.797, 0.756 - 0.7722
 
 if __name__ == '__main__':
     data = data_import.read_file_from_name('emails.csv', ',')

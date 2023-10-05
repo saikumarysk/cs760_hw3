@@ -1,12 +1,19 @@
 import data_import
 import logistic
 
-# Results
+# Results - Before Normalization
 # 0.914 0.88417 0.80351
 # 0.897 0.83206 0.787
 # 0.883 0.89573 0.66549
 # 0.82 0.92537 0.42177
 # 0.851 0.79182 0.69608
+
+# Results - After Normalization - This is a lot better
+# 0.94 0.90036 0.88772
+# 0.968 0.92683 0.96029
+# 0.937 0.94378 0.82746
+# 0.949 0.92042 0.90476
+# 0.927 0.85196 0.92157
 
 if __name__ == '__main__':
     data = data_import.read_file_from_name('emails.csv', ',')
