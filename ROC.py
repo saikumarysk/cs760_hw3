@@ -44,6 +44,16 @@ if __name__ == '__main__':
     roc_x = [fpr for fpr, tpr in roc_coords]
     roc_y = [tpr for fpr, tpr in roc_coords]
 
+    # sklearn results
+    # (0.0, 0.0) inf
+    # (0.16666666666666666, 0.0) 0.95
+    # (0.3333333333333333, 0.0) 0.85
+    # (0.3333333333333333, 0.25) 0.8
+    # (0.6666666666666666, 0.25) 0.55
+    # (0.6666666666666666, 0.5) 0.45
+    # (1.0, 0.5) 0.3
+    # (1.0, 1.0) 0.1
+
     plt.xlim(-0.1, 1.1)
     plt.ylim(-0.1, 1.1)
     plt.grid( visible = True )
